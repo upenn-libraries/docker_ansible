@@ -5,7 +5,8 @@ RUN apk update && apk add \
     docker \
     git \
     libffi-dev \
-    libressl-dev
+    libressl-dev \
+    openssh-client
 RUN pip install ansible~=2.8.0 docker jsondiff
 
 CMD ["ansible", "--help"]
